@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.15/css/bootstrap-multiselect.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" integrity="sha512-mSYUmp1HYZDFaVKK//63EcZq4iFWFjxSL+Z3T/aCt4IO9Cejm03q3NKKYN6pFQzY0SBOr8h+eCIAZHPXcpZaNw==" crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <title>P H Diagnostic Centre</title>
+    <script>
+        var timeout = 2000; // in miliseconds (3*1000) 
+        $('.alert').delay(timeout).fadeOut(300);
+    </script>
+    <link rel="stylesheet" href="https://phdc.co.in/assets/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+
+    <link rel="stylesheet" href="https://phdc.co.in/assets/bower_components/bootstrap-datepicker/dist/css/bootstrap-datetimepicker.min.css ">
+</head>
+
+<body>
+
+    <section>
+        <div class="container mt-5">
+            <div class="col-sm-12">
+                <form action="https://phdc.co.in/webenquiryform" enctype="multipart/form-data" method="post" accept-charset="utf-8">
+                    <div class="form-group">
+                        <input type="text" class="form-control form-control-sm" name="name" id="name" value="" placeholder="Name - Surname" required>
+                        <span class="help-block" style="color:red;"> </span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" class="form-control form-control-sm" id="email" value="" placeholder="abc@example.com">
+                        <span class="help-block" style="color:red;"> </span>
+                    </div>
+                    <div class="form-group ">
+                        <input type="text" class="form-control form-control-sm" name="mobile" id="mobile" value="" placeholder="Mobile" required>
+                        <span class="help-block" style="color:red;"> </span>
+                    </div>
+                    <div class="form-group ">
+                        <textarea class="form-control form-control-sm" id="message" name="message" placeholder="Message" rows="3" required></textarea>
+                        <span class="help-block" style="color:red;"> </span>
+                    </div>
+                    <input type="hidden" name="formName" value="Food_Allergy">
+                    <div class="form-group" style="max-width:8em;">
+                        <input class="form-control btn btn-primary" type="submit" name="fileSubmit" value="Submit" />
+                    </div>
+            </div>
+            </form>
+        </div>
+        </div>
+        <script type="text/javascript" src="https://www.phdiagnosticcentre.com/phoffice/assets/bootstrap/js/multiple-select.js">
+        </script>
+        <script type="text/javascript" src="https://www.phdiagnosticcentre.com/phoffice/assets/bootstrap/js/app.js"></script>
+        <script>
+            var timeout = 2000; // in miliseconds (3*1000) 
+            $('.alert').delay(timeout).fadeOut(300);
+        </script>
+        <script>
+            function closeHospital() {
+                $("#hospital").css("display", "none");
+                document.getElementById("hospital").required = false;
+            }
+
+            function openHospital() {
+                $("#hospital").css("display", "block");
+                document.getElementById("hospital").required = true;
+            }
+
+            //Datepicker
+            $(".datepicker").datepicker({
+                format: "dd-mm-yyyy",
+                //startDate: new Date(),
+                todayHighlight: true,
+                startDate: new Date(2021, 1 - 1, 16),
+                endDate: "0",
+            });
+        </script>
+
+
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+</body>
+<script src="https://phdc.co.in/assets/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.js">
+</script>
+
+
+</body>
+
+</html>
